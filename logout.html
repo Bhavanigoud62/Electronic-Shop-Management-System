@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Electronics Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4FC3F7, #29B6F6);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .message-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .message-box h1 {
+            margin: 0 0 20px;
+            font-size: 28px;
+        }
+        .message-box p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .message-box button {
+            padding: 10px 20px;
+            background-color: #29B6F6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .message-box button:hover {
+            background-color: #4FC3F7;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>You are logged out now</h1>
+        <p>Thank you for visiting our Electronics Store!</p>
+        <button onclick="redirectToCheckout()">Sign In</button>
+    </div>
+
+    <script>
+        function redirectToCheckout() {
+            window.location.href = 'checkout.html';
+        }
+    </script>
+</body>
+</html>

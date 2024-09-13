@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Success - Electronics Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e9e9e9;
+        }
+
+        .success-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .success-container h2 {
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        .success-container p {
+            margin-bottom: 20px;
+        }
+
+        .success-container a {
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .success-container a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-container">
+        <h2>Order Placed Successfully!</h2>
+        <p>Thank you for your purchase. Your order is on its way.</p>
+        <!-- Note: Removed the href attribute from the anchor tag -->
+        <a id="home-link">Go to Home</a>
+    </div>
+
+    <script>
+        // Redirect to product.html after 5 seconds (5000 milliseconds)
+        setTimeout(function() {
+            window.location.href = "product.html";
+        }, 5000); // Adjust the delay as needed
+    </script>
+</body>
+
+</html>
